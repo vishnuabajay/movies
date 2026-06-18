@@ -35,7 +35,7 @@
           }, {});
           if (decoded.p !== undefined) {
             window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + (decoded.p || '') +
+              l.pathname.slice(0, -1) + '/' + (decoded.p || '') +
               (decoded.q ? ('?' + decoded.q) : '') +
               l.hash
             );
